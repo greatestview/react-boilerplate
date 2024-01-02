@@ -1,0 +1,23 @@
+.fs-grid {
+  padding-left: var(--fs-grid--padding);
+  padding-right: var(--fs-grid--padding);
+}
+
+/* Default grid child element */
+.fs-grid > * {
+  padding-left: calc(var(--fs-grid--column-gap) / 2);
+  padding-right: calc(var(--fs-grid--column-gap) / 2);
+  width: var(--fs-grid--width);
+
+  &:not(.fs-grid__full) {
+    @media (--fs-viewport--md) {
+      width: calc(10 * var(--fs-grid--column-width));
+      margin-left: calc(1 * var(--fs-grid--column-width));
+    }
+  }
+}
+
+.fs-grid > ol,
+.fs-grid > ul {
+  padding-left: calc(var(--fs-grid--column-gap) / 2 + var(--fs-space--8));
+}

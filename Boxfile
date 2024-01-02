@@ -1,0 +1,10 @@
+# Boxfile for freistilbox
+#
+# Put your deployment settings here.
+#
+version: 2.0
+shared_folders:
+env_specific_files:
+  docroot/.htaccess:
+    butler: .htaccess.butler
+    production: .htaccess.production

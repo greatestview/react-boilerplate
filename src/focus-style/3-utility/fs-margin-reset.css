@@ -1,0 +1,8 @@
+.fs-margin-reset {
+  margin: 0;
+}
+
+.fs-margin-reset--y {
+  margin-bottom: 0;
+  margin-top: 0;
+}

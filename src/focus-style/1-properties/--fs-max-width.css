@@ -1,0 +1,12 @@
+:root {
+  --fs-max-width--xs   : 20rem;
+  --fs-max-width--sm   : 30rem;
+  --fs-max-width--md   : 40rem;
+  --fs-max-width--lg   : 50rem;
+  --fs-max-width--xl   : 60rem;
+  --fs-max-width--2xl  : 70rem;
+  --fs-max-width--3xl  : 80rem;
+  --fs-max-width--4xl  : 90rem;
+  --fs-max-width--5xl  : 100rem;
+  --fs-max-width--full : 100%;
+}

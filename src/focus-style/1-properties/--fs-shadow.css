@@ -1,0 +1,6 @@
+:root {
+  --fs-shadow--default                 : 0 var(--fs-space--0) var(--fs-space--2) 0 var(--fs-color--shadow);
+  --fs-shadow--interaction-transparent : 0 0 var(--fs-space--2) 0 transparent;
+  --fs-shadow--interaction             : 0 var(--fs-space--0) var(--fs-space--2) 0 var(--fs-color--interaction);
+  --fs-shadow--interaction-cta         : 0 var(--fs-space--0) var(--fs-space--2) 0 var(--fs-color--interaction-cta);
+}

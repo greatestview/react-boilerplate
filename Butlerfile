@@ -1,0 +1,19 @@
+{
+  "docker-settings": {
+    "image": "palasthotel/lamp:php8"
+  },
+  "runtime": "nix",
+  "nixrecipe": "devenv/php81",
+  "docker-dependencies": [],
+  "tasks": [
+    {
+      "title": "App",
+      "type": "external",
+      "input": "n/a",
+      "output": "n/a",
+      "buildchain": [],
+      "cmdline": ["/usr/bin/env", "butler", "watch"],
+      "compile": ["/usr/bin/env","butler","compile"]
+    }
+  ]
+}

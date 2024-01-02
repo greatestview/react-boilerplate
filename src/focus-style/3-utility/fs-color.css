@@ -1,0 +1,4 @@
+.fs-color--inherit,
+.fs-color--inherit:visited {
+  color: inherit;
+}

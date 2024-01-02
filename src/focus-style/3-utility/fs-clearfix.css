@@ -1,0 +1,9 @@
+/**
+ * Best and simplest clearfix right now.
+ */
+
+.fs-clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,6 @@
+.Box {
+  border: var(--fs-border-width--default) solid var(--fs-color--primary);
+  border-radius: var(--fs-border-radius--default);
+  box-shadow: var(--fs-shadow--default);
+  padding: var(--fs-space--4);
+}

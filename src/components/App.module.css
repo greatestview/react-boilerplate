@@ -1,0 +1,5 @@
+.App {
+  height: 100%;
+  padding: var(--fs-space--4);
+  width: 100%;
+}

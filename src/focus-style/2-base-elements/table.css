@@ -1,0 +1,61 @@
+/**
+ * Basic html styling: Table
+ */
+
+table {
+  --fs-table-space: var(--fs-space--6);
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  font-family: var(--fs-font-family--default);
+  padding-left: var(--fs-space--2);
+  padding-right: var(--fs-space--2);
+  margin-bottom: var(--fs-table-space);
+  margin-top: var(--fs-table-space);
+
+  @media (--fs-viewport--md) {
+    --fs-table-space: var(--fs-space--10);
+  }
+}
+
+tr {
+  thead &,
+  tfoot &,
+  tbody &:nth-child(even) {
+    background-color: var(--fs-color--background);
+  }
+}
+
+th,
+td {
+  padding: var(--fs-space--2) var(--fs-space--3);
+
+  &:first-child {
+    padding-left: var(--fs-space--4);
+  }
+
+  &:last-child {
+    padding-right: var(--fs-space--4);
+  }
+}
+
+th {
+  color: var(--fs-color--strong);
+  font-weight: var(--fs-font-weight--bold);
+  text-align: left;
+  vertical-align: bottom;
+}
+
+td {
+  vertical-align: text-top;
+}
+
+caption {
+  caption-side: bottom;
+  color: var(--fs-color--text-1);
+  font-size: var(--fs-font-size--sm);
+  line-height: var(--fs-line-height--sm);
+  margin-bottom: var(--fs-space--2);
+  margin-top: var(--fs-space--2);
+  text-align: left;
+}

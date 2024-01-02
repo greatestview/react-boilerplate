@@ -1,0 +1,16 @@
+.fs-list-reset {
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+
+  .fs-grid > & {
+    padding-left: calc(var(--fs-grid--column-gap) / 2);
+  }
+}
+
+.fs-list-reset li {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}

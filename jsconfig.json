@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "checkJs": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+  },
+  "include": ["./src"],
+  "exclude": ["./node_modules", "./docroot"]
+}

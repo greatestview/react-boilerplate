@@ -1,0 +1,3 @@
+.fs-svg-path-currentColor svg path {
+  fill: currentColor;
+}

@@ -1,0 +1,25 @@
+/**
+ * Basic style reset
+ */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  word-break: break-word;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}

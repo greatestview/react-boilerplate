@@ -1,0 +1,47 @@
+.fs-flex {
+  display: flex;
+}
+
+.fs-flex--row {
+  flex-direction: row;
+}
+
+.fs-flex--column {
+  flex-direction: column;
+}
+
+.fs-flex--align-start {
+  align-items: flex-start;
+}
+
+.fs-flex--align-center {
+  align-items: center;
+}
+
+.fs-flex--align-end {
+  align-items: flex-end;
+}
+
+.fs-flex--justify-start {
+  justify-content: flex-start;
+}
+
+.fs-flex--justify-center {
+  justify-content: center;
+}
+
+.fs-flex--justify-end {
+  justify-content: flex-end;
+}
+
+.fs-flex--wrap {
+  flex-wrap: wrap;
+}
+
+.fs-flex--grow {
+  flex-grow: 1;
+}
+
+.fs-flex--shrink {
+  flex-shrink: 1;
+}

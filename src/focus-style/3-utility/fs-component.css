@@ -1,0 +1,18 @@
+/**
+ * Creates a Block Formatting Context to prevent Margin Collapse.
+ *
+ * Every component should not have an outer margin. That prevents typical problems with Margin
+ * Collapse to fail, if flexbox, float, etc… is used. That way in certain situations margin
+ * addition can be avoided.
+ *
+ * @see https://www.smashingmagazine.com/2017/12/understanding-css-layout-block-formatting-context/
+ */
+
+.fs-component {
+  overflow: auto;
+
+  @supports (display: flow-root) {
+    display: flow-root;
+    overflow: visible;
+  }
+}

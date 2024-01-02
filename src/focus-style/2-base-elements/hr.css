@@ -1,0 +1,16 @@
+/**
+ * Basic html styling: various
+ */
+
+hr {
+  --fs-hr-space: var(--fs-space--8);
+  border-color: var(--fs-color--border);
+  border-width: var(--fs-border-width--default) 0 0 0;
+  margin-bottom: var(--fs-hr-space);
+  margin-top: var(--fs-hr-space);
+  width: var(--fs-space--full);
+
+  @media (--fs-viewport--md) {
+    --fs-hr-space: var(--fs-space--10);
+  }
+}

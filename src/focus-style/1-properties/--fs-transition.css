@@ -1,0 +1,21 @@
+:root {
+  /* Transition and animation duration */
+  --fs-transition-duration--fast    : 0.15s;
+  --fs-transition-duration--normal  : 0.3s;
+  --fs-transition-duration--slow    : 0.6s;
+  --fs-transition-duration--default : var(--fs-transition-duration--normal);
+
+  /* Transition timing functions */
+  --fs-transition-timing-function--ease-in           : ease-in;
+  --fs-transition-timing-function--ease-out          : ease-out;
+  --fs-transition-timing-function--ease-in-out       : ease-in-out;
+  --fs-transition-timing-function--ease-in-cubic     : cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  --fs-transition-timing-function--ease-out-cubic    : cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  --fs-transition-timing-function--ease-in-back      : cubic-bezier(0.600, -0.280, 0.735, 0.045);
+  --fs-transition-timing-function--ease-out-back     : cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  --fs-transition-timing-function--ease-in-out-back  : cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  --fs-transition-timing-function--ease-in-quart     : cubic-bezier(0.895, 0.030, 0.685, 0.220);
+  --fs-transition-timing-function--ease-out-quart    : cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  --fs-transition-timing-function--ease-in-out-quart : cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  --fs-transition-timing-function--default           : var(--fs-transition-timing-function--ease-in-out);
+}

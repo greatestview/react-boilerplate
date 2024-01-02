@@ -1,0 +1,144 @@
+/**
+ * Basic html styling: form elements
+ */
+
+:disabled {
+  cursor: not-allowed;
+  opacity: var(--fs-opacity--50);
+}
+
+::placeholder {
+  color: var(--fs-color--text-2);
+  opacity: var(--fs-opacity--100);
+}
+
+/* @see http://adrianroselli.com/2019/09/under-engineered-text-boxen.html */
+button,
+input,
+select,
+textarea,
+.fs-button {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
+button,
+[type="submit"],
+[type="button"],
+[type="reset"],
+.fs-button {
+  appearance: none;
+  background-color: transparent;
+  border-color: var(--fs-color--interaction);
+  border-radius: var(--fs-border-radius--default);
+  border-style: solid;
+  border-width: var(--fs-border-width--default);
+  box-shadow: var(--fs-shadow--interaction-transparent);
+  color: var(--fs-color--interaction);
+  cursor: pointer;
+  display: inline-block;
+  padding: var(--fs-space--2) var(--fs-space--6);
+  transition: box-shadow var(--fs-transition-duration--default) var(--fs-transition-timing-function--default);
+  word-break: normal;
+
+  &:hover {
+    opacity: var(--fs-opacity--75);
+  }
+
+  &:focus {
+    box-shadow: var(--fs-shadow--interaction);
+    outline: none;
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+[type="submit"],
+.fs-button--submit {
+  background-color: var(--fs-color--interaction);
+  color: var(--fs-color--white);
+}
+
+[type="text"],
+[type="password"],
+[type="url"],
+[type="email"],
+[type="tel"],
+[type="search"],
+[type="number"],
+[type="date"],
+[type="month"],
+[type="week"],
+[type="datetime"],
+[type="datetime-local"],
+[type="time"],
+[type="file"],
+textarea,
+select {
+  appearance: none;
+  background-color: transparent;
+  border-color: var(--fs-color--border);
+  border-radius: var(--fs-border-radius--default);
+  border-style: solid;
+  border-width: var(--fs-border-width--default);
+  box-shadow: var(--fs-shadow--interaction-transparent);
+  max-width: var(--fs-max-width--xs);
+  padding: var(--fs-space--2) var(--fs-space--3);
+  transition: box-shadow var(--fs-transition-duration--default) var(--fs-transition-timing-function--default);
+  width: 100%;
+
+  &:focus {
+    border-color: var(--fs-color--interaction);
+    box-shadow: var(--fs-shadow--interaction);
+    outline: none;
+  }
+}
+
+textarea {
+  max-width: var(--fs-max-width--sm);
+}
+
+label {
+  display: block;
+  margin-bottom: var(--fs-space--1);
+  margin-top: var(--fs-space--1);
+
+  [type="checkbox"] + &,
+  [type="radio"] + & {
+    display: inline;
+    margin-left: var(--fs-space--2);
+  }
+}
+
+[type="checkbox"],
+[type="radio"] {
+  vertical-align: middle;
+
+  label > & {
+    margin-right: var(--fs-space--2);
+  }
+}
+
+fieldset {
+  border-color: var(--fs-color--border);
+  border-radius: var(--fs-border-radius--lg);
+  border-width: var(--fs-border-width--default);
+  border-style: solid;
+  padding: var(--fs-space--4);
+}
+
+legend {
+  color: var(--fs-color--text-1);
+  font-size: var(--fs-font-size--sm);
+  letter-spacing: var(--fs-letter-spacing--wide);
+  line-height: var(--fs-line-height--sm);
+  margin-left: calc(-1 * var(--fs-space--2));
+  margin-right: calc(-1 * var(--fs-space--2));
+  padding-left: var(--fs-space--2);
+  padding-right: var(--fs-space--2);
+  text-transform: uppercase;
+}

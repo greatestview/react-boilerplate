@@ -1,0 +1,97 @@
+:root {
+  /* Font weights */
+  --fs-font-weight--normal      : 400;
+  --fs-font-weight--semi-bold   : 600;
+  --fs-font-weight--bold        : 700;
+  --fs-font-weight--extra-bold  : 800;
+
+  /* Some typical font scales. Choose **one** for your --fs-font-size-scale. */
+  --fs-font-size-scale--minor-second     : 1.067;
+  --fs-font-size-scale--major-second     : 1.125;
+  --fs-font-size-scale--minor-third      : 1.200;
+  --fs-font-size-scale--major-third      : 1.250;
+  --fs-font-size-scale--perfect-fourth   : 1.333;
+  --fs-font-size-scale--augmented-fourth : 1.414;
+  --fs-font-size-scale--perfect-fifth    : 1.500;
+  --fs-font-size-scale--golden-ratio     : 1.618;
+
+  /* Font size of root element */
+  --fs-font-size-root           : calc(112.5% + .2vw);
+
+  /* Font size variants are calculated via --fs-font-size-root and this factor */
+  --fs-font-size-scale          : var(--fs-font-size-scale--augmented-fourth);
+
+  /* Font familes */
+  --fs-font-family--sans        :  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;  /* Font stack from WordPress */
+  --fs-font-family--serif       : 'Georgia', serif;
+  --fs-font-family--mono        : 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;  /* Font stack from Bootstrap */
+  --fs-font-family--default     : var(--fs-font-family--sans);
+
+  /*
+  Be careful to **always** use both --fs-font-size--xy **and**
+  --fs-line-height--xy properties together as a pair with the same
+  dimension! Otherwise this typography system does not make sense.
+
+  Example:
+  h1 {
+    font-size: var(--fs-font-size--xl);
+    line-height: var(--fs-line-height--xl);
+  }
+  */
+
+  /* Font sizes, calculated via --fs-font-size-scale */
+  --fs-font-size--sm            : calc(var(--fs-font-size--base) / var(--fs-font-size-scale));
+  --fs-font-size--base          : 1rem;
+  --fs-font-size--md            : calc(var(--fs-font-size--base) * var(--fs-font-size-scale));
+  --fs-font-size--lg            : calc(var(--fs-font-size--md)   * var(--fs-font-size-scale));
+  --fs-font-size--xl            : calc(var(--fs-font-size--lg)   * var(--fs-font-size-scale));
+
+  /*
+  Advanced typography: X-Height
+  Different fonts with the same x-height look more homogenious, but in
+  most cases different fonts come with different x-heights on the same
+  font-size. --fs-font-x-height-scale allows to align the x-height, it can be
+  used as an additional factor for font-size.
+
+  Example:
+  .blockquote {
+    font-family: var(--fs-font-family-serif);
+    font-size: var(--fs-font-size--md--serif);
+    line-height: var(--fs-line-height--md);
+  }
+
+  Uncomment the following section, if you want to use the x-height scales.
+  As you can see, things might become more complex.
+  */
+  --fs-font-x-height-scale--mono     : 0.9;
+  /*
+  --fs-font-x-height-scale--sans     : 1.0;
+  --fs-font-x-height-scale--serif    : 1.1;
+  --fs-font-x-height-scale--mono     : 0.9;
+  --fs-font-x-height-scale--default  : var(--fs-font-x-height-scale--sans);
+
+  --fs-font-size--sm--sans      : calc(var(--fs-font-size--base--sans) / var(--fs-font-size-scale));
+  --fs-font-size--base--sans    : calc(1rem * var(--fs-font-x-height-scale--sans));
+  --fs-font-size--md--sans      : calc(var(--fs-font-size--base--sans) * var(--fs-font-size-scale));
+  --fs-font-size--lg--sans      : calc(var(--fs-font-size--md--sans) * var(--fs-font-size-scale));
+  --fs-font-size--xl--sans      : calc(var(--fs-font-size--lg--sans) * var(--fs-font-size-scale));
+
+  --fs-font-size--sm--serif     : calc(var(--fs-font-size--base--serif) / var(--fs-font-size-scale));
+  --fs-font-size--base--serif   : calc(1rem * var(--fs-font-x-height-scale--serif));
+  --fs-font-size--md--serif     : calc(var(--fs-font-size--base--serif) * var(--fs-font-size-scale));
+  --fs-font-size--lg--serif     : calc(var(--fs-font-size--md--serif) * var(--fs-font-size-scale));
+  --fs-font-size--xl--serif     : calc(var(--fs-font-size--lg--serif) * var(--fs-font-size-scale));
+
+  --fs-font-size--sm--mono      : calc(var(--fs-font-size--base--mono) / var(--fs-font-size-scale));
+  --fs-font-size--base--mono    : calc(1rem * var(--fs-font-x-height-scale--mono));
+  --fs-font-size--md--mono      : calc(var(--fs-font-size--base--mono) * var(--fs-font-size-scale));
+  --fs-font-size--lg--mono      : calc(var(--fs-font-size--md--mono) * var(--fs-font-size-scale));
+  --fs-font-size--xl--mono      : calc(var(--fs-font-size--lg--mono) * var(--fs-font-size-scale));
+
+  --fs-font-size--sm--default   : var(--fs-font-size--sm--sans);
+  --fs-font-size--base--default : var(--fs-font-size--base--sans);
+  --fs-font-size--md--default   : var(--fs-font-size--md--sans);
+  --fs-font-size--lg--default   : var(--fs-font-size--lg--sans);
+  --fs-font-size--xl--default   : var(--fs-font-size--xl--sans);
+  */
+}

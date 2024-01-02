@@ -1,0 +1,51 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.1.0",
+  "description": "A Butler ready starter project for new React apps equipped with Focus Style",
+  "author": "Kim Meyer <info@meyer.kim>",
+  "license": "UNLICENSED",
+  "main": "docroot/index.html",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development",
+    "start-without-images": "webpack serve --mode development --env buildImages=false"
+  },
+  "engines": {
+    "node": "^18.4.0",
+    "npm": "^8.12.1"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "not dead"
+  ],
+  "dependencies": {
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "classnames": "^2.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "autoprefixer": "^10.4.4",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.6.0",
+    "cssnano": "^5.1.7",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss-custom-media": "^10.0.2",
+    "postcss-easy-import": "^4.0.0",
+    "postcss-loader": "^6.2.1",
+    "postcss-nested": "^5.0.6",
+    "postcss-preset-env": "^7.3.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-image-resize-loader": "^5.0.0"
+  }
+}

@@ -1,0 +1,37 @@
+/**
+ * This classes create horizontal or vertical margin between immediate children.
+ * Every margin set on the children in that direction will be overridden.
+ */
+
+.fs-gap-margin > * {
+  --fs-gap-margin--space: var(--fs-space--2);
+  margin: 0;
+}
+
+.fs-gap-margin--row > *:not(:last-child):not(.fs-gap-margin__exclude) {
+  margin-right: var(--fs-gap-margin--space);
+}
+
+.fs-gap-margin--col > *:not(:last-child):not(.fs-gap-margin__exclude) {
+  margin-bottom: var(--fs-gap-margin--space);
+}
+
+.fs-gap-margin--0 > * {
+  --fs-gap-margin--space: var(--fs-space--0);
+}
+
+.fs-gap-margin--sm > * {
+  --fs-gap-margin--space: var(--fs-space--1);
+}
+
+.fs-gap-margin--md > * {
+  --fs-gap-margin--space: var(--fs-space--4);
+}
+
+.fs-gap-margin--lg > * {
+  --fs-gap-margin--space: var(--fs-space--8);
+}
+
+.fs-gap-margin--xl > * {
+  --fs-gap-margin--space: var(--fs-space--12);
+}

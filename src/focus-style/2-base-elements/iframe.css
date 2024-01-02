@@ -1,0 +1,7 @@
+/**
+ * Basic html styling: iframe
+ */
+
+iframe {
+  max-width: var(--fs-max-width--full);
+}

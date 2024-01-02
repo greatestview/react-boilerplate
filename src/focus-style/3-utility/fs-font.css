@@ -1,0 +1,36 @@
+.fs-font--sm {
+  font-size: var(--fs-font-size--sm);
+  line-height: var(--fs-line-height--sm);
+}
+
+.fs-font--base {
+  font-size: var(--fs-font-size--base);
+  line-height: var(--fs-line-height--base);
+}
+
+.fs-font--md {
+  font-size: var(--fs-font-size--md);
+  line-height: var(--fs-line-height--md);
+}
+
+.fs-font--lg {
+  font-size: var(--fs-font-size--lg);
+  line-height: var(--fs-line-height--lg);
+}
+
+.fs-font--xl {
+  font-size: var(--fs-font-size--xl);
+  line-height: var(--fs-line-height--xl);
+}
+
+.fs-font--bold {
+  font-weight: var(--fs-font-weight--bold);
+}
+
+.fs-font--serif {
+  font-family: var(--fs-font-family--serif);
+}
+
+.fs-font--italic {
+  font-style: italic;
+}

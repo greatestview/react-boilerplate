@@ -1,0 +1,7 @@
+/**
+ * Basic html styling: body
+ */
+
+body {
+  text-rendering: optimizeLegibility;
+}

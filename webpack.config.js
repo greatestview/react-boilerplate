@@ -1,4 +1,5 @@
 const path = require("path");
+const EsLintPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = (env, argv) => {
@@ -13,7 +14,7 @@ module.exports = (env, argv) => {
     );
   }
   return {
-    entry: "./src/index.jsx",
+    entry: "./src/index.tsx",
     output: {
       filename: "bundle.js",
       path: path.join(__dirname, "docroot"),
@@ -92,6 +93,7 @@ module.exports = (env, argv) => {
       extensions: [".js", ".jsx", ".ts", ".tsx"],
     },
     plugins: [
+      new EsLintPlugin(),
       // Re-generate index.html with injected script tag.
       // The injected script tag contains a src value of the
       // filename output defined above.

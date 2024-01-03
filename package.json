@@ -12,8 +12,8 @@
     "start-without-images": "webpack serve --mode development --env buildImages=false"
   },
   "engines": {
-    "node": "^18.4.0",
-    "npm": "^8.12.1"
+    "node": "^18.14.0",
+    "npm": "^9.3.1"
   },
   "browserslist": [
     "last 1 version",

@@ -40,7 +40,8 @@ button,
   cursor: pointer;
   display: inline-block;
   padding: var(--fs-space--2) var(--fs-space--6);
-  transition: box-shadow var(--fs-transition-duration--default) var(--fs-transition-timing-function--default);
+  transition: box-shadow var(--fs-transition-duration--default)
+    var(--fs-transition-timing-function--default);
   word-break: normal;
 
   &:hover {
@@ -88,7 +89,8 @@ select {
   box-shadow: var(--fs-shadow--interaction-transparent);
   max-width: var(--fs-max-width--xs);
   padding: var(--fs-space--2) var(--fs-space--3);
-  transition: box-shadow var(--fs-transition-duration--default) var(--fs-transition-timing-function--default);
+  transition: box-shadow var(--fs-transition-duration--default)
+    var(--fs-transition-timing-function--default);
   width: 100%;
 
   &:focus {

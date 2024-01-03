@@ -1,31 +1,34 @@
 :root {
   /* Font weights */
-  --fs-font-weight--normal      : 400;
-  --fs-font-weight--semi-bold   : 600;
-  --fs-font-weight--bold        : 700;
-  --fs-font-weight--extra-bold  : 800;
+  --fs-font-weight--normal: 400;
+  --fs-font-weight--semi-bold: 600;
+  --fs-font-weight--bold: 700;
+  --fs-font-weight--extra-bold: 800;
 
   /* Some typical font scales. Choose **one** for your --fs-font-size-scale. */
-  --fs-font-size-scale--minor-second     : 1.067;
-  --fs-font-size-scale--major-second     : 1.125;
-  --fs-font-size-scale--minor-third      : 1.200;
-  --fs-font-size-scale--major-third      : 1.250;
-  --fs-font-size-scale--perfect-fourth   : 1.333;
-  --fs-font-size-scale--augmented-fourth : 1.414;
-  --fs-font-size-scale--perfect-fifth    : 1.500;
-  --fs-font-size-scale--golden-ratio     : 1.618;
+  --fs-font-size-scale--minor-second: 1.067;
+  --fs-font-size-scale--major-second: 1.125;
+  --fs-font-size-scale--minor-third: 1.2;
+  --fs-font-size-scale--major-third: 1.25;
+  --fs-font-size-scale--perfect-fourth: 1.333;
+  --fs-font-size-scale--augmented-fourth: 1.414;
+  --fs-font-size-scale--perfect-fifth: 1.5;
+  --fs-font-size-scale--golden-ratio: 1.618;
 
   /* Font size of root element */
-  --fs-font-size-root           : calc(112.5% + .2vw);
+  --fs-font-size-root: calc(112.5% + 0.2vw);
 
   /* Font size variants are calculated via --fs-font-size-root and this factor */
-  --fs-font-size-scale          : var(--fs-font-size-scale--augmented-fourth);
+  --fs-font-size-scale: var(--fs-font-size-scale--augmented-fourth);
 
   /* Font familes */
-  --fs-font-family--sans        :  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;  /* Font stack from WordPress */
-  --fs-font-family--serif       : 'Georgia', serif;
-  --fs-font-family--mono        : 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;  /* Font stack from Bootstrap */
-  --fs-font-family--default     : var(--fs-font-family--sans);
+  --fs-font-family--sans: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif; /* Font stack from WordPress */
+  --fs-font-family--serif: "Georgia", serif;
+  --fs-font-family--mono: "SFMono-Regular", "Menlo", "Monaco", "Consolas",
+    "Liberation Mono", "Courier New", monospace; /* Font stack from Bootstrap */
+  --fs-font-family--default: var(--fs-font-family--sans);
 
   /*
   Be careful to **always** use both --fs-font-size--xy **and**
@@ -40,11 +43,15 @@
   */
 
   /* Font sizes, calculated via --fs-font-size-scale */
-  --fs-font-size--sm            : calc(var(--fs-font-size--base) / var(--fs-font-size-scale));
-  --fs-font-size--base          : 1rem;
-  --fs-font-size--md            : calc(var(--fs-font-size--base) * var(--fs-font-size-scale));
-  --fs-font-size--lg            : calc(var(--fs-font-size--md)   * var(--fs-font-size-scale));
-  --fs-font-size--xl            : calc(var(--fs-font-size--lg)   * var(--fs-font-size-scale));
+  --fs-font-size--sm: calc(
+    var(--fs-font-size--base) / var(--fs-font-size-scale)
+  );
+  --fs-font-size--base: 1rem;
+  --fs-font-size--md: calc(
+    var(--fs-font-size--base) * var(--fs-font-size-scale)
+  );
+  --fs-font-size--lg: calc(var(--fs-font-size--md) * var(--fs-font-size-scale));
+  --fs-font-size--xl: calc(var(--fs-font-size--lg) * var(--fs-font-size-scale));
 
   /*
   Advanced typography: X-Height
@@ -63,7 +70,7 @@
   Uncomment the following section, if you want to use the x-height scales.
   As you can see, things might become more complex.
   */
-  --fs-font-x-height-scale--mono     : 0.9;
+  --fs-font-x-height-scale--mono: 0.9;
   /*
   --fs-font-x-height-scale--sans     : 1.0;
   --fs-font-x-height-scale--serif    : 1.1;

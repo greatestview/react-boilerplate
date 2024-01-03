@@ -4,69 +4,69 @@
    */
 
   /* Brand */
-  --fs-color--primary           : hsl(336, 77%, 50%);
-  --fs-color--secondary         : hsl(191, 67%, 46%);
-  --fs-color--secondary-dimmed  : hsl(191, 82%, 31%);
+  --fs-color--primary: hsl(336, 77%, 50%);
+  --fs-color--secondary: hsl(191, 67%, 46%);
+  --fs-color--secondary-dimmed: hsl(191, 82%, 31%);
 
   /* Grayscale */
-  --fs-color--black             : hsla(0, 0%, 0%, .87);
-  --fs-color--black-1           : hsla(0, 0%, 0%, .66 );
-  --fs-color--black-2           : hsla(0, 0%, 0%, .5 );
-  --fs-color--black-3           : hsla(0, 0%, 0%, .2 );
-  --fs-color--black-4           : hsla(0, 0%, 0%, .05 );
-  --fs-color--white             : hsla(0, 0%, 100%, .87);
-  --fs-color--white-1           : hsla(0, 0%, 100%, .66 );
-  --fs-color--white-2           : hsla(0, 0%, 100%, .5 );
-  --fs-color--white-3           : hsla(0, 0%, 100%, .2 );
-  --fs-color--white-4           : hsla(0, 0%, 100%, .1 );
+  --fs-color--black: hsla(0, 0%, 0%, 0.87);
+  --fs-color--black-1: hsla(0, 0%, 0%, 0.66);
+  --fs-color--black-2: hsla(0, 0%, 0%, 0.5);
+  --fs-color--black-3: hsla(0, 0%, 0%, 0.2);
+  --fs-color--black-4: hsla(0, 0%, 0%, 0.05);
+  --fs-color--white: hsla(0, 0%, 100%, 0.87);
+  --fs-color--white-1: hsla(0, 0%, 100%, 0.66);
+  --fs-color--white-2: hsla(0, 0%, 100%, 0.5);
+  --fs-color--white-3: hsla(0, 0%, 100%, 0.2);
+  --fs-color--white-4: hsla(0, 0%, 100%, 0.1);
 
   /* Form validation */
-  --fs-color--form-error        : hsla(10, 100%, 50%, .24);
-  --fs-color--form-warning      : hsla(42, 100%, 50%, .24);
-  --fs-color--form-success      : hsla(110, 100%, 50%, .24);
+  --fs-color--form-error: hsla(10, 100%, 50%, 0.24);
+  --fs-color--form-warning: hsla(42, 100%, 50%, 0.24);
+  --fs-color--form-success: hsla(110, 100%, 50%, 0.24);
 
   /* Other */
-  --fs-color--mark              : hsla(42, 100%, 50%, .24);
+  --fs-color--mark: hsla(42, 100%, 50%, 0.24);
 
   /* Social colors from @url http://brandcolors.net */
-  --fs-color--social-facebook   : #3b5998;
-  --fs-color--social-twitter    : #55acee;
-  --fs-color--social-whatsapp   : #4dc247;
-  --fs-color--social-pinterest  : #cc2127;
-  --fs-color--social-tumblr     : #35465c;
-  --fs-color--social-youtube    : #cd201f;
-  --fs-color--social-vimeo      : #1ab7ea;
-  --fs-color--social-soundcloud : #ff8800;
-  --fs-color--social-linkedin   : #0077b5;
-  --fs-color--social-xing       : #cfdc00;
-  --fs-color--social-disqus     : #2e9fff;
-  --fs-color--social-instagram  : #3f729b;
-  --fs-color--social-snapchat   : #fffc00;
+  --fs-color--social-facebook: #3b5998;
+  --fs-color--social-twitter: #55acee;
+  --fs-color--social-whatsapp: #4dc247;
+  --fs-color--social-pinterest: #cc2127;
+  --fs-color--social-tumblr: #35465c;
+  --fs-color--social-youtube: #cd201f;
+  --fs-color--social-vimeo: #1ab7ea;
+  --fs-color--social-soundcloud: #ff8800;
+  --fs-color--social-linkedin: #0077b5;
+  --fs-color--social-xing: #cfdc00;
+  --fs-color--social-disqus: #2e9fff;
+  --fs-color--social-instagram: #3f729b;
+  --fs-color--social-snapchat: #fffc00;
 
   /**
    * Color properties, which reference colors from the palette.
    * Should be used for overrides.
    */
-  --fs-color--site-background   : var(--fs-color--white);
-  --fs-color--background        : var(--fs-color--black-4);
-  --fs-color--shadow            : var(--fs-color--black-4);
-  --fs-color--border            : var(--fs-color--black-3);
-  --fs-color--focus             : var(--fs-color--primary);
-  --fs-color--interaction       : var(--fs-color--secondary);
-  --fs-color--interaction-cta   : var(--fs-color--primary);
-  --fs-color--visited           : var(--fs-color--secondary-dimmed);
-  --fs-color--strong            : var(--fs-color--black);
-  --fs-color--text              : var(--fs-color--black);
-  --fs-color--text-1            : var(--fs-color--black-1);
-  --fs-color--text-2            : var(--fs-color--black-2);
+  --fs-color--site-background: var(--fs-color--white);
+  --fs-color--background: var(--fs-color--black-4);
+  --fs-color--shadow: var(--fs-color--black-4);
+  --fs-color--border: var(--fs-color--black-3);
+  --fs-color--focus: var(--fs-color--primary);
+  --fs-color--interaction: var(--fs-color--secondary);
+  --fs-color--interaction-cta: var(--fs-color--primary);
+  --fs-color--visited: var(--fs-color--secondary-dimmed);
+  --fs-color--strong: var(--fs-color--black);
+  --fs-color--text: var(--fs-color--black);
+  --fs-color--text-1: var(--fs-color--black-1);
+  --fs-color--text-2: var(--fs-color--black-2);
 
   @media (prefers-color-scheme: dark) {
-    --fs-color--site-background   : var(--fs-color--black);
-    --fs-color--background        : var(--fs-color--white-4);
-    --fs-color--border            : var(--fs-color--white-3);
-    --fs-color--strong            : var(--fs-color--white);
-    --fs-color--text              : var(--fs-color--white);
-    --fs-color--text-1            : var(--fs-color--white-1);
-    --fs-color--text-2            : var(--fs-color--white-2);
+    --fs-color--site-background: var(--fs-color--black);
+    --fs-color--background: var(--fs-color--white-4);
+    --fs-color--border: var(--fs-color--white-3);
+    --fs-color--strong: var(--fs-color--white);
+    --fs-color--text: var(--fs-color--white);
+    --fs-color--text-1: var(--fs-color--white-1);
+    --fs-color--text-2: var(--fs-color--white-2);
   }
 }
